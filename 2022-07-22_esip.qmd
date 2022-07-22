@@ -21,9 +21,7 @@ date-meta: 2022-07-22
 
 - Focusing on visualization, VR and ML as ways to think about large-scale systems
 
-- Background in landscape and community ecology
-
-- [https://mm218.dev](https://mm218.dev)
+- These slides: [mm218.dev/esip2022](https://mm218.dev/esip2022)
 
 :::
 
@@ -39,32 +37,6 @@ knitr::include_graphics("https://github.com/mikemahoney218.png")
 :::
 
 ::::
-
----
-
-<br />
-<br />
-
-![](blog.png)
-
-<br />
-<br />
-
-[https://www.esipfed.org/merge/student-fellow-blog/trust-in-machine-learning-guest-blog](https://www.esipfed.org/merge/student-fellow-blog/trust-in-machine-learning-guest-blog)
-
----
-
-<br />
-<br />
-
-![](preprint.png)
-
-<br />
-<br />
-
-[https://arxiv.org/abs/2205.08530](https://arxiv.org/abs/2205.08530)
-
-
 
 ## New York State 2019 CLCPA:
 
@@ -117,6 +89,20 @@ knitr::include_graphics("fia_plot_design.jpg")
 ```
 </center>
 
+
+---
+
+<br />
+<br />
+
+![](preprint.png)
+
+<br />
+<br />
+
+[https://arxiv.org/abs/2205.08530](https://arxiv.org/abs/2205.08530)
+
+
 ---
 
 
@@ -124,16 +110,6 @@ knitr::include_graphics("fia_plot_design.jpg")
 knitr::include_graphics("las_chm.png")
 ```
 
----
-
-
-<center>
-```{r out.width="100%"}
-knitr::include_graphics("lidar_boundaries_map.png")
-```
-</center>
-
----
 
 ## Modeling approach:
 
@@ -155,6 +131,16 @@ knitr::include_graphics("lidar_boundaries_map.png")
 
 ---
 
+
+<center>
+```{r out.width="100%"}
+knitr::include_graphics("lidar_boundaries_map.png")
+```
+</center>
+
+
+---
+
 <center>
 ![](lidaragb.png)
 </center>
@@ -171,6 +157,7 @@ knitr::include_graphics("lidar_boundaries_map.png")
 
 > Here's how the lie works. Researchers report high "accuracy," but then later reveal—buried within the details of a technical paper—that they were actually misusing the word "accuracy" to mean another measure of performance related to accuracy but in actuality not nearly as impressive.
 
+
 ---
 
 ### This is the mainstream opinion of AI and machine learning.
@@ -178,6 +165,20 @@ knitr::include_graphics("lidar_boundaries_map.png")
 <br />
 
 ### How can we build back lost trust when developing AI systems that might impact people's lives?
+
+
+---
+
+
+<br />
+<br />
+
+![](blog.png)
+
+<br />
+<br />
+
+[https://www.esipfed.org/merge/student-fellow-blog/trust-in-machine-learning-guest-blog](https://www.esipfed.org/merge/student-fellow-blog/trust-in-machine-learning-guest-blog)
 
 ---
 
@@ -195,13 +196,6 @@ knitr::include_graphics("lidar_boundaries_map.png")
 
 ![](hex_panel.png)
 
-## Report applicability domains
-
-<center>
-```{r out.width="80%"}
-knitr::include_graphics("aoa.png")
-```
-</center>
 
 ## Report accuracy across scales
 
@@ -230,13 +224,22 @@ knitr::include_graphics("scales.png")
 
 ![](agreement.png)
 
+
+## Report applicability domains
+
+<center>
+```{r out.width="80%"}
+knitr::include_graphics("aoa.png")
+```
+</center>
+
 ## Remaining Challenges
 
 + How can we tailor our assessments to be the most useful for end users?
 
 <p></p>
 
-+ How can we incentivize improved accuracy assessment in applied AI/ML?
++ How can we avoid overwhelming people with charts and tables when they just want a map?
 
 ---
 
@@ -258,3 +261,4 @@ This work was financially supported by the Climate & Applied Forest Research Ins
 
 <br />
 
+Slides available at [mm218.dev/esip2022](https://mm218.dev/esip2022)
