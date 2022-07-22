@@ -219,12 +219,6 @@ knitr::include_graphics("scales.png")
 
 </center>
 
-
-## Report accuracy for important subgroups
-
-![](agreement.png)
-
-
 ## Report applicability domains
 
 <center>
@@ -243,7 +237,7 @@ knitr::include_graphics("aoa.png")
 
 ---
 
-> Many human behaviors defy reliable prediction. It’s like predicting the weather many weeks in advance. There's no achieving high certainty. There's no magic crystal ball. Readers at large must hone a certain vigilance: Be wary about claims of "high accuracy" in machine learning. If it sounds too good to be true, it probably is.
+> It’s like predicting the weather many weeks in advance. There's no achieving high certainty. There's no magic crystal ball. Readers at large must hone a certain vigilance: Be wary about claims of "high accuracy" in machine learning. If it sounds too good to be true, it probably is.
 
 ## Thank you!
 
