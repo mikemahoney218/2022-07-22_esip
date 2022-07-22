@@ -1,0 +1,260 @@
+---
+format: revealjs
+pagetitle: "Building trust in AI outputs"
+license: CC BY-NC
+author-meta: Michael J Mahoney
+date-meta: 2022-07-22
+---
+
+## {background-image="splash.jpg"}
+
+
+## About Me
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Mike Mahoney
+
+- PhD Student at SUNY-ESF and ESIP Community Fellow
+
+- Focusing on visualization, VR and ML as ways to think about large-scale systems
+
+- Background in landscape and community ecology
+
+- [https://mm218.dev](https://mm218.dev)
+
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+
+```{r, echo=FALSE}
+knitr::include_graphics("https://github.com/mikemahoney218.png")
+```
+
+:::
+
+::::
+
+---
+
+<br />
+<br />
+
+![](blog.png)
+
+<br />
+<br />
+
+[https://www.esipfed.org/merge/student-fellow-blog/trust-in-machine-learning-guest-blog](https://www.esipfed.org/merge/student-fellow-blog/trust-in-machine-learning-guest-blog)
+
+---
+
+<br />
+<br />
+
+![](preprint.png)
+
+<br />
+<br />
+
+[https://arxiv.org/abs/2205.08530](https://arxiv.org/abs/2205.08530)
+
+
+
+## New York State 2019 CLCPA:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<br />
+
++ 85% reduction in GHG emissions by 2050  
+
++ Net zero emissions statewide by 2050
+
++ Lands & forests make up the difference
+
++ Need a way to monitor sequestration
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+```{r}
+knitr::include_graphics("forest.jpg")
+```
+
+:::
+
+::::
+
+<br /> 
+
+---
+
+<center>
+```{r}
+#| out-width: 80%
+knitr::include_graphics("ny_fia.png")
+```
+</center>
+
+<p style="font-size:16px">Figure from Shirer, R. and Zimmerman, C. (2010) Forest Regeneration in New York State. The Nature Conservancy.</p>
+
+---
+
+<center>
+```{r out.width="60%"}
+knitr::include_graphics("fia_plot_design.jpg")
+```
+</center>
+
+---
+
+
+```{r out.width="100%"}
+knitr::include_graphics("las_chm.png")
+```
+
+---
+
+
+<center>
+```{r out.width="100%"}
+knitr::include_graphics("lidar_boundaries_map.png")
+```
+</center>
+
+---
+
+## Modeling approach:
+
++ Ensemble modeling approach
+
+<p></p>
+
++ Linear regression combining predictions from:
+
+  + Random forest 
+
+  + Gradient boosting machine
+
+  + Support vector machine
+
+<p></p>
+
++ Ensembling improves predictive accuracy, lets us try many models but present a single prediction
+
+---
+
+<center>
+![](lidaragb.png)
+</center>
+
+---
+
+![](bogus.png)
+
+[https://blogs.scientificamerican.com/observations/the-medias-coverage-of-ai-is-bogus/](https://blogs.scientificamerican.com/observations/the-medias-coverage-of-ai-is-bogus/)
+
+---
+
+> The press will have you believe that machine learning can reliably predict whether you're gay, whether you'll develop psychosis, whether you’ll have a heart attack and whether you're a criminal—as well as other ambitious predictions such as when you'll die and whether your unpublished book will be a bestseller. It's all a lie. 
+
+> Here's how the lie works. Researchers report high "accuracy," but then later reveal—buried within the details of a technical paper—that they were actually misusing the word "accuracy" to mean another measure of performance related to accuracy but in actuality not nearly as impressive.
+
+---
+
+### This is the mainstream opinion of AI and machine learning.
+
+<br />
+
+### How can we build back lost trust when developing AI systems that might impact people's lives?
+
+---
+
+## Only report the accuracy that matters
+
+<center>
+![](https://github.com/leekgroup/postpi/raw/master/image/problem_caused.png)
+</center>
+
+<p style="font-size:16px">Figure from [https://github.com/leekgroup/postpi/](https://github.com/leekgroup/postpi/).</p>
+
+---
+
+## Report accuracy spatially
+
+![](hex_panel.png)
+
+## Report applicability domains
+
+<center>
+```{r out.width="80%"}
+knitr::include_graphics("aoa.png")
+```
+</center>
+
+## Report accuracy across scales
+
+```{r out.width='100%'}
+dplyr::tribble(
+  ~ "Scale", ~ "RMSE", ~ "MBE", ~ "R2", 
+  "Plot-pixel comparison", 39.60, 1.88, 0.76,
+  "8,660 ha hex", 33.27, 3.56, 0.76,
+  "78,100 ha hex", 23.38, 1.64, 0.80,
+  "216,500 ha hex", 21.17, 0.75, 0.81
+) |> 
+  kableExtra::kbl() |> 
+  kableExtra::kable_styling(bootstrap_options = "striped")
+```
+
+<center>
+
+```{r out.width="100%"}
+knitr::include_graphics("scales.png")
+```
+
+</center>
+
+
+## Report accuracy for important subgroups
+
+![](agreement.png)
+
+## Remaining Challenges
+
++ How can we tailor our assessments to be the most useful for end users?
+
+<p></p>
+
++ How can we incentivize improved accuracy assessment in applied AI/ML?
+
+---
+
+> Many human behaviors defy reliable prediction. It’s like predicting the weather many weeks in advance. There's no achieving high certainty. There's no magic crystal ball. Readers at large must hone a certain vigilance: Be wary about claims of "high accuracy" in machine learning. If it sounds too good to be true, it probably is.
+
+## Thank you!
+
+This work was financially supported by the Climate & Applied Forest Research Institute at SUNY-ESF.
+
+<br />
+
+#### Find me online:
+
+{{< fa brands github >}} [@mikemahoney218](https://github.com/mikemahoney218/) 
+
+{{< fa brands twitter >}} [@mikemahoney218](https://twitter.com/mikemahoney218/) 
+
+{{< fa globe >}} [mm218.dev](https://mm218.dev)
+
+<br />
+
